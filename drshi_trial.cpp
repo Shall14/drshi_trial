@@ -72,6 +72,28 @@ int main()
         itr2++;
     }
 
+    // Point 8 and 9
+
+    int n3;
+    for (int i = 0;; i++)
+    {
+        printf("Please Enter a number: \n");
+        scanf("%d", &n3);
+        if (mp.count(n3))
+        {
+            printf("%d %s \n", n3, mp[n3].c_str());
+
+            printf("Enter a string\n");
+            scanf("%1000s", tt);
+            string tmp = tt;
+            mp[n3] = tmp;
+
+            break;
+        }
+        else
+            printf("You have entered invalid key\n");
+    }
+
 
     // Displaying the map values
 
